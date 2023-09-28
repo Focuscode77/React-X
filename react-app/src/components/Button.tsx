@@ -1,18 +1,19 @@
 import React from 'react';
 
 interface Props {
-
+    color: string;
     text: string;
+    onClick: () => void;
 
 
 }
 
-const Button = ({ text }: Props) => {
+const Button = ({ color, text, onClick }: Props) => {
 
 
-    return <div className='btn btn-success'>
+    return <button className={'btn btn-' + color} onClick={onClick}>
         {text}
-    </div>
+    </button>
 
 
 }

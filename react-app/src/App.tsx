@@ -8,7 +8,7 @@ function App() {
   return (
 
     <div>
-      <Button text='Success' />
+      <Button color="dark" onClick={() => console.log('Clicked')} text='Success' />
 
 
     </div>
