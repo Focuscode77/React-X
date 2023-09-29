@@ -1,12 +1,16 @@
 import React from 'react';
 
 interface Props {
-    color: string;
+    color?: 'primary' | 'secondary' | 'danger';
     text: string;
     onClick: () => void;
 
 
 }
+
+
+
+
 
 const Button = ({ color, text, onClick }: Props) => {
 
