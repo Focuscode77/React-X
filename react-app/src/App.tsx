@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
-import Button from "./components/Button";
-import Alert from './components/Alert';
-import Heart from './components/Heart'
+import Expandable from './components/Expandable'
 import { useState } from 'react';
 
 
@@ -9,15 +7,11 @@ import { useState } from 'react';
 
 function App() {
 
-  const [alertVisible, setAlertVisibility] = useState(false);
-
   return (
 
     <div>
+      <Expandable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, accusamus facilis neque fugit dolores incidunt omnis asperiores repellendus tenetur fugiat ut iure autem, voluptas unde sequi necessitatibus in nulla itaque corrupti quidem deserunt. Animi cupiditate exercitationem eaque aliquam at odio reiciendis, obcaecati a dolore aut et error repudiandae quos nihil autem? Necessitatibus quasi vel dicta ea quis quos rem cumque! Dicta quae commodi magni, impedit aspernatur velit rem neque ipsum. Impedit magni et quam ipsa nam consequatur, odio, reiciendis accusantium voluptas dolorum cupiditate officiis culpa in blanditiis! Necessitatibus, a assumenda consequuntur id consectetur aliquam, dolore, sint eaque adipisci quisquam repudiandae!</Expandable>
 
-      {alertVisible && <Alert onClose={() => setAlertVisibility(false)}> My Alert</Alert>}
-      <Button color="primary" onClick={() => console.log(setAlertVisibility(true))} text='Success' />
-      <Heart onClick={() => console.log('clicked')} />
     </div>
 
 
