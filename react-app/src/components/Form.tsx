@@ -25,14 +25,19 @@ const Form = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
 
-            <div className="mb-3"><label htmlFor="name" className="form-label">Name</label>
+            <div className="mb-3"><label htmlFor="name" className="form-label">Description</label>
                 <input {...register('name')} id="name" type="text" className="form-control" />
                 {errors.name && (<p className="text-danger">{errors.name.message}</p>)}
 
             </div>
 
-            <div className="mb-3"><label htmlFor="age" className="form-label">Age</label>
+            <div className="mb-3"><label htmlFor="age" className="form-label">Amount</label>
                 <input {...register('age', { valueAsNumber: true })} id="age" type="number" className="form-control" />
+                {errors.age && (<p className="text-danger">{errors.age.message}</p>)}
+            </div>
+
+            <div className="mb-3"><label htmlFor="age" className="form-label">Category</label>
+                <input {...register('age', { valueAsNumber: true })} id="age" type="dropdown" className="form-control" />
                 {errors.age && (<p className="text-danger">{errors.age.message}</p>)}
             </div>
             <button className="btn btn-primary" type="submit">Submit</button>
