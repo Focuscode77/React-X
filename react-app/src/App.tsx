@@ -7,6 +7,7 @@ export const categories = ["Groceries", "Utilities", "Entertainment"];
 
 function App() {
 
+
   const [selectedCategory, setselectedCategory] = useState("");
 
   const [expenses, setExpenses] = useState([
