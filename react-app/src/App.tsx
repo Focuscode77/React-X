@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import ExpenseList from "./expense-tracker/components/ExpenseList";
 import ExpenseFilter from "./expense-tracker/components/ExpenseFilter";
 import ExpenseForm from "./expense-tracker/components/ExpenseForm";
+import ProductLust from "./components/ProductLust";
 import categories from "./expense-tracker/categories"
 
 
@@ -22,20 +23,25 @@ function App() {
 
   const visiableExpenses = selectedCategory ? expenses.filter(e => e.category === selectedCategory) : expenses
   return (
-
-    <div>
+    <Fragment>
       <div>
-        <div className="mb-5">
-          <ExpenseForm onSubmit={expense => setExpenses([...expenses, { ...expense, id: expenses.length + 1 }])} />
+
+
+      </div>
+
+      <div>
+        <div>
+          <div className="mb-5">
+            <ExpenseForm onSubmit={expense => setExpenses([...expenses, { ...expense, id: expenses.length + 1 }])} />
+          </div>
         </div>
-      </div>
-      <div className="mb-3">
-        <ExpenseFilter onSelectCategory={category => setselectedCategory(category)} />
-      </div>
+        <div className="mb-3">
+          <ExpenseFilter onSelectCategory={category => setselectedCategory(category)} />
+        </div>
 
-      <ExpenseList expenses={visiableExpenses} onDelete={(id) => setExpenses(expenses.filter(e => e.id !== id))} />
-    </div>
-
+        <ExpenseList expenses={visiableExpenses} onDelete={(id) => setExpenses(expenses.filter(e => e.id !== id))} />
+      </div>
+    </Fragment>
 
   )
 
