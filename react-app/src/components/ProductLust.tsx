@@ -8,7 +8,7 @@ const ProductLust = () => {
         console.log('fecthing products')
         setProducts(['Clothing', 'Household']);
 
-    })
+    }, []);
 
     return (
         <div>
