@@ -7,6 +7,7 @@ const ProductLust = () => {
     useEffect(() => {
         console.log('fecthing products')
         setProducts(['Clothing', 'Household']);
+        console.log('Testing')
 
     }, []);
 
