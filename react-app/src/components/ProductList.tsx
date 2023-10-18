@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ProductLust = () => {
+const ProductList = () => {
 
     const [products, setProducts] = useState<string[]>([])
 
@@ -13,9 +13,9 @@ const ProductLust = () => {
 
     return (
         <div>
-            <ProductLust />
+            <ProductList />
         </div>
     )
 }
 
-export default ProductLust
+export default ProductList

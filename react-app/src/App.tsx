@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import ExpenseList from "./expense-tracker/components/ExpenseList";
 import ExpenseFilter from "./expense-tracker/components/ExpenseFilter";
 import ExpenseForm from "./expense-tracker/components/ExpenseForm";
-import ProductLust from "./components/ProductLust";
+import ProductList from "./components/ProductList";
 import categories from "./expense-tracker/categories"
 
 
