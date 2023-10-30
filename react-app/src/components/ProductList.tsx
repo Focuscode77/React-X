@@ -9,6 +9,7 @@ const ProductList = () => {
         setProducts(['Clothing', 'Household']);
         console.log('Testing')
         console.log('Testing-Two')
+        console.log('Last-Three')
 
     }, []);
 
