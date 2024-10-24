@@ -10,6 +10,7 @@ const ProductList = () => {
         console.log('Testing')
         console.log('Testing-Two')
         console.log('Last-Three')
+        console.log('Testing-Four')
 
     }, []);
 
